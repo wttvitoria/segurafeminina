@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dicas de Segurança Feminina</title>
+  <meta name="description" content="Site moderno e interativo com dicas de segurança para mulheres." />
+  <style>
+    :root{
+      --bg:#fff0f6;
+      --card:#ffe6f0;
+      --muted:#a1738a;
+      --text:#4a2a3d;
+      --brand:#e75480; /* rosa forte */
+      --accent:#ff9ec4; /* rosa claro */
+      --focus:#ff69b4;
+      --radius:18px;
+      --shadow:0 6px 20px rgba(231, 84, 128,.3);
+    }
+    *{box-sizing:border-box; margin:0; padding:0}
+    body{
+      font-family:"Segoe UI", Roboto, sans-serif;
+      background:linear-gradient(160deg, #fff0f6 0%, #ffe0ec 100%);
+      color:var(--text);
+      animation:fadeIn 1s ease-in;
+    }
+    @keyframes fadeIn{
+      from{opacity:0; transform:translateY(10px)}
+      to{opacity:1; transform:translateY(0)}
+    }
+    header{
+      background:var(--brand);
+      color:white;
+      padding:14px 24px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      position:sticky;
+      top:0;
+      z-index:10;
+      box-shadow:var(--shadow);
+      animation:slideDown 0.7s ease;
+    }
+    @keyframes slideDown{
+      from{transform:translateY(-100%)}
+      to{transform:translateY(0)}
+    }
+    header h1{font-size:1.4rem}
+    nav a{
+      color:white;
+      margin-left:16px;
+      text-decoration:none;
+      font-weight:600;
+      transition:color .3s;
+    }
+    nav a:hover{color:var(--focus)}
+
+    .hero{
+      text-align:center;
+      padding:60px 20px;
+      animation:fadeUp 1.2s ease;
+    }
+    @keyframes fadeUp{
+      from{opacity:0; transform:translateY(20px)}
+      to{opacity:1; transform:translateY(0)}
+    }
+    .hero h2{
+      font-size:2.2rem;
+      color:var(--brand);
+      margin-bottom:12px;
+    }
+    .hero p{color:var(--muted); font-size:1.1rem}
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+      gap:20px;
+      margin:40px auto;
+      max-width:1000px;
+      padding:0 20px;
+    }
+    .card{
+      background:white;
+      border-radius:var(--radius);
+      padding:24px;
+      box-shadow:var(--shadow);
+      transition:transform .3s, box-shadow .3s;
+      animation:fadeInCard 1s ease;
+    }
+    @keyframes fadeInCard{
+      from{opacity:0; transform:scale(.95)}
+      to{opacity:1; transform:scale(1)}
+    }
+    .card:hover{
+      transform:translateY(-8px) scale(1.02);
+      box-shadow:0 12px 25px rgba(231,84,128,.4);
+    }
+    .card h3{color:var(--brand); margin-bottom:10px}
+
+    .cta{
+      display:inline-block;
+      margin-top:14px;
+      padding:10px 18px;
+      background:var(--brand);
+      color:white;
+      border-radius:30px;
+      text-decoration:none;
+      font-weight:600;
+      transition:background .3s, transform .2s;
+    }
+    .cta:hover{
+      background:var(--focus);
+      transform:scale(1.05);
+    }
+
+    footer{
+      background:var(--brand);
+      color:white;
+      text-align:center;
+      padding:20px;
+      margin-top:40px;
+      animation:fadeUp 1s ease;
+    }
+    details{
+      margin-top:10px;
+      padding:12px;
+      background:var(--card);
+      border-radius:12px;
+      cursor:pointer;
+      transition:background .3s;
+    }
+    details:hover{background:#ffd6e9}
+    summary{font-weight:600; color:var(--brand)}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Segura+</h1>
+    <nav>
+      <a href="#dicas">Dicas</a>
+      <a href="#checklist">Checklist</a>
+      <a href="#apoio">Apoio</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Dicas de Segurança Feminina</h2>
+    <p>Práticas simples que podem ajudar você a se sentir mais segura no dia a dia, online e em deslocamentos.</p>
+  </section>
+
+  <section id="dicas" class="grid">
+    <div class="card">
+      <h3>🚶‍♀️ Deslocamentos</h3>
+      <p>Compartilhe sua localização com alguém de confiança, prefira locais iluminados e fique atenta ao entorno.</p>
+    </div>
+    <div class="card">
+      <h3>📱 Ambiente Digital</h3>
+      <p>Use senhas fortes, ative autenticação em duas etapas e evite compartilhar localização em tempo real.</p>
+    </div>
+    <div class="card">
+      <h3>🏠 Em Casa</h3>
+      <p>Verifique trancas, evite divulgar rotinas nas redes e guarde documentos em locais seguros.</p>
+    </div>
+    <div class="card">
+      <h3>🤝 Rede de Apoio</h3>
+      <p>Mantenha contatos importantes à mão e combine palavras-código com amigos e familiares.</p>
+    </div>
+  </section>
+
+  <section id="checklist" class="grid">
+    <div class="card">
+      <h3>Checklist antes de sair</h3>
+      <details>
+        <summary>Mostrar</summary>
+        <ul>
+          <li>Celular carregado e contatos de emergência.</li>
+          <li>Rota planejada e compartilhada.</li>
+          <li>Dinheiro reserva separado.</li>
+        </ul>
+      </details>
+    </div>
+    <div class="card">
+      <h3>Checklist chegando ao destino</h3>
+      <details>
+        <summary>Mostrar</summary>
+        <ul>
+          <li>Avise alguém que chegou bem.</li>
+          <li>Identifique saídas de emergência.</li>
+        </ul>
+      </details>
+    </div>
+  </section>
+
+  <section id="apoio" class="grid">
+    <div class="card">
+      <h3>📞 180 — Central da Mulher</h3>
+      <p>Atendimento 24h para denúncias e orientação.</p>
+      <a class="cta" href="tel:180">Ligar</a>
+    </div>
+    <div class="card">
+      <h3>🚨 190 — Polícia</h3>
+      <p>Emergências em andamento. Ligue imediatamente.</p>
+      <a class="cta" href="tel:190">Ligar</a>
+    </div>
+    <div class="card">
+      <h3>🚑 192 — SAMU</h3>
+      <p>Atendimento médico de urgência.</p>
+      <a class="cta" href="tel:192">Ligar</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Segura+ — Informações educativas. Em caso de risco imediato, procure ajuda profissional e autoridades.</p>
+  </footer>
+</body>
+</html>
